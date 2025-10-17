@@ -9,10 +9,25 @@
     <meta name="theme-color" content="#3498db">
     <meta name="robots" content="index, follow">
     <title>Texas Viagens - Descubra os EUA | Agência de Turismo Acessível</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.pexels.com">
+    
     <!-- Preload critical resources -->
-    <link rel="preload" as="style" href="assets/css/styles.css">
+    <link rel="preload" as="style" href="assets/css/styles-premium.css">
+    <link rel="preload" as="script" href="assets/js/script-premium.js">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles-premium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/icon-192.png">
 </head>
 <body>
     <!-- Mensagem de boas-vindas para leitores de tela -->
@@ -257,6 +272,10 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/script-premium.js" defer></script>
+    
+    <!-- Anunciador ARIA para mensagens dinâmicas -->
+    <div id="aria-announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
 </body>
 </html>
